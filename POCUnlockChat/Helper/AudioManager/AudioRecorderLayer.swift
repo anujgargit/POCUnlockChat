@@ -20,7 +20,7 @@ class AudioRecorderLayer: NSObject, ObservableObject {
     @Published var recordingSuccess: Bool = false
 
     let minDuration: TimeInterval = 15
-    let maxDuration: TimeInterval = 1 * 60
+    let maxDuration: TimeInterval = 5 * 60
     var onRecordingFinished: (() -> Void)?
     private var cancellable: AnyCancellable?
     private var audioRecorder: AVAudioRecorder?
